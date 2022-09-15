@@ -11,14 +11,14 @@ body{
     text-align: center;  
 }
 #mainIG{
-    position: sticky;
-    left: 300px;
-    top: 1px;     
+    position: absolute;
+    left: 800px;
+    top: 5px;     
 }
 #artIG{
-    position: sticky;
-    left: 200px;
-    top: 1px;  
+    position: absolute;
+    left: 830px;
+    top: 5px;  
 }
 .mainBody{
     text-align: left;
@@ -72,20 +72,45 @@ body{
     /* Rectangle 5 */
     position: absolute;
     width: 1062px;
-    height: 1107px;
+    height: 850px;
     left: 0px;
     top: 1050px;
     background: #FFF387;
 }
 #profilePic{
-    
+    padding-left: 10px;
     border-radius: 50%;
 }
+#gemButterfly{
+    padding-left: 10px;
+}
+#about{
+    padding-left: 10px;
+}
 #interviewBody{
-    background: #FFF387;
+    
     margin-top: 15px !important;
     margin-left: 15px !important;
     margin-right: 15px !important;
     margin-bottom: 15px !important;
   }
+#interviewHeader{
+    margin-top: 15px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    margin-bottom: 15px !important;
+}
+#yellow{
+    -webkit-text-stroke: 0.15px black;
+}
+
+@font-face {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    src: url(gilliams-regular.ttf);
+  }
+
+#about{
+    text-align: center;
+}
+  
 
