@@ -4,30 +4,40 @@
 @font-face {
     font-family: 'giliamsregular';
     src: url('giliams-regular-webfont.woff2') format('woff2'),
-         url('giliams-regular-webfont.woff') format('woff');
+         url('fonts/giliams-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'nightregular';
+    src: url('nightdemo-webfont.woff2') format('woff2'),
+         url('fonts/nightdemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#header{
+    font-family:'nightregular';
+    text-align: center;
+}
 body{
     background-color: #FFCCF4;
-    font-family: 'giliams-regular-webfont';
 }
-
-
 .navigationBar{
     background-color: #FFED4D !important; 
     text-align: center;  
 }
 #mainIG{
-    position: absolute;
-    left: 800px;
-    top: 5px;     
+    position: relative;
+    padding-left: 80px;     
 }
 #artIG{
-    position: absolute;
-    left: 830px;
-    top: 5px;  
+    position: relative;
+    padding-left: 5px;
+}
+a{
+    text-decoration:none;
 }
 .mainBody{
     text-align: left;
@@ -36,7 +46,7 @@ body{
     /* Rectangle 4 */
     position: absolute;
     width: 501px;
-    height: 300px;
+    height: 325px;
     left: 450px;
     top: 150px;
     background: #FFF387;
@@ -47,6 +57,7 @@ body{
     margin-left: 10px !important;
     margin-right: 10px !important;
     margin-bottom: 10px !important;
+    font-family: 'giliamsregular';
 }
 
 #butterflyHair{
@@ -82,7 +93,7 @@ body{
     /* Rectangle 5 */
     position: absolute;
     width: 1062px;
-    height: 2000px;
+    height: 2100px;
     left: 0px;
     top: 1050px;
     background: #FFF387 !important;
@@ -100,6 +111,7 @@ body{
 }
 #about{
     padding-left: 10px;
+    font-family: 'nightregular';
 }
 #interviewBody{
     text-align:center;
@@ -153,4 +165,3 @@ body{
     padding-bottom: 5px; 
 }
   
-
