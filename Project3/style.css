@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(75px, auto);
+    grid-template-areas: 
+       "sidebarLeft navLeft navLeft navLeft link1 link2 link3 link4 navRight navRight navRight sidebarRight"
+       "sidebarLeft header header header header header header header header header header sidebarRight"
+       "sidebarLeft intro intro intro intro intro intro intro intro intro intro sidebarRight"
+       "sidebarLeft student student student student student student student student img1 img1 sidebarRight"
+       "sidebarLeft img2 img2 athletes athletes athletes athletes athletes athletes athletes athletes sidebarRight"
+       "sidebarLeft scientists scientists scientists scientists scientists scientists scientists scientists img3 img3 sidebarRight"
+       "sidebarLeft img4 img4 webDesigner webDesigner webDesigner webDesigner webDesigner webDesigner webDesigner webDesigner sidebarRight"
+       "sidebarLeft closing closing closing closing closing closing closing closing closing closing sidebarRight"
+       "sidebarLeft footer footer footer footer footer footer footer footer footer footer sidebarRight";
+}
+h1{
+    font-family: 'Roboto Slab'; 
+    font-size: 96px;
+}
+a{
+    font-family: 'Roboto Slab'; 
+    font-size: 14px;
+}
+.sidebarLeft{
+    grid-area: sidebarLeft;
+    background-color:#FFEDDF;
+    text-align: right;
+    padding-left: 5px;
+    width: 200px;
+}
+.sidebarRight{
+    grid-area: sidebarRight;
+    background-color:#FFEDDF;
+    text-align: left;
+    padding-right: 5px;
+    width: 200px;
+}
+#chinese{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+.navLeft{
+    padding-top: 10px;
+    text-align: center;
+    width: auto;
+    grid-area: navLeft;
+    background-color: #FFEDDF;
+}
+.navRight{
+    padding-top: 10px;
+    text-align: center;
+    width: auto;
+    grid-area: navRight;
+    background-color: #FFEDDF;
+}
+.link1{
+    padding-top: 10px;
+    text-align: center;
+    width: auto;
+    grid-area: link1;
+    background-color: #FFEDDF;
+}
+.link2{
+    padding-top: 10px;
+    text-align: center;
+    width: auto;
+    grid-area: link2;
+    background-color: #FFEDDF;
+}
+.link3{
+    padding-top: 10px;
+    text-align: center;
+    width: auto;
+    grid-area: link3;
+    background-color: #FFEDDF;
+}
+.link4{
+    padding-top: 10px;
+    text-align: center;
+    width: auto;
+    grid-area: link4;
+    background-color: #FFEDDF;
+}
+#dice{
+    padding-left: 25%;
+}
+.title{
+    padding-bottom: 20px;
+    text-align: center;
+    width: auto;
+    grid-area: header;
+    background-color:#FFEDDF;
+  
+}
+.intro{
+    grid-area: intro;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color:#FFEDDF;
+}
+.student{
+    grid-area: student;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 5px;
+    background-color:#FFEDDF;
+}
+.img1{
+    grid-area: img1;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 50px;
+    background-color:#FFEDDF;
+}
+.img2{
+    grid-area: img2;
+    width: auto;
+    padding-left: 50px;
+    background-color:#FFEDDF;
+}
+.athletes{
+    grid-area: athletes;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 50px;
+    text-align: right;
+    background-color:#FFEDDF;
+}
+.scientists{
+    grid-area: scientists;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 5px;
+    background-color:#FFEDDF;
+}
+.img3{
+    grid-area: img3;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 50px;
+    background-color:#FFEDDF;
+}
+.img4{
+    grid-area: img4;
+    width: auto;
+    padding-left: 50px;
+    background-color:#FFEDDF;
+}
+.webDesigner{
+    grid-area: webDesigner;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 50px;
+    background-color:#FFEDDF;
+}
+.closing{
+    grid-area: closing;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#FFEDDF;
+}
+#story1{
+    font-family: 'Roboto Slab'; 
+    font-size: 12px;
+}
+
+#story2{
+    font-family: 'Roboto Slab'; 
+    font-size: 12px;
+}
+#story3{
+
+    font-family: 'Roboto Slab'; 
+    font-size: 12px;
+}
+#story4{
+
+    font-family: 'Roboto Slab'; 
+    font-size: 12px;
+}
+#story5{
+
+    font-family: 'Roboto Slab'; 
+    font-size: 12px;
+}
+#story6{
+    font-family: 'Roboto Slab'; 
+    font-size: 12px;
+}
+footer{
+    padding-top: 50px;
+    text-align: center;
+    width: auto;
+    grid-area: footer;
+    background-color:#FFEDDF;
+
+  
+}
+#disclaimer{
+    font-family: 'Roboto Slab'; 
+    font-size: 10px;
+    font-style:italic;
+}
+
+
+@media (max-midth: 1000px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px;
+        grid-auto-rows: minmax(75px, auto);
+        grid-template-areas: 
+       "link1 link2 link3 link4"
+       "header header header header"
+       "main main main main"
+       "quote quote quote quote"
+       "small2 small2 small2 med2"
+       "footer footer footer footer";
+    }
+
+    .link1{
+        padding-top: 10px;
+        text-align: center;
+        width: auto;
+        grid-area: link1;
+        background-color: #FFEDDF;
+    }
+    .link2{
+        padding-top: 10px;
+        text-align: center;
+        width: auto;
+        grid-area: link2;
+        background-color: #FFEDDF;
+    }
+    .link3{
+        padding-top: 10px;
+        text-align: center;
+        width: auto;
+        grid-area: link3;
+        background-color: #FFEDDF;
+    }
+    .link4{
+        padding-top: 10px;
+        text-align: center;
+        width: auto;
+        grid-area: link4;
+        background-color: #FFEDDF;
+    }
+
+
+
+}
+
