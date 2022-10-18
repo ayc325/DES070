@@ -1,6 +1,11 @@
 *{
     margin: 0;
 }
+html{
+    background-color: black;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -9,12 +14,18 @@
     grid-template-areas: 
        "navLeft navLeft navLeft navLeft link1 link2 link3 link4 navRight navRight navRight navRight"
        "header header header header header header header header header header header header"
-       "sidebarLeft intro intro intro intro intro intro intro intro intro intro sidebarRight"
-       "sidebarLeft student student student student student student student student student student sidebarRight"
-       "sidebarLeft athletes athletes athletes athletes athletes athletes athletes athletes athletes athletes sidebarRight"
-       "sidebarLeft scientists scientists scientists scientists scientists scientists scientists scientists scientists scientists sidebarRight"
-       "sidebarLeft webDesigner webDesigner webDesigner webDesigner webDesigner webDesigner webDesigner webDesigner webDesigner webDesigner sidebarRight"
-       "sidebarLeft closing closing closing closing closing closing closing closing closing closing sidebarRight"
+       "sidebarLeft text text text text text text text text text text sidebarRight"
+       "sidebarLeft text text text text text text text text text text sidebarRight"
+       "sidebarLeft text text text text text text text text text text sidebarRight"
+       "sidebarLeft text text text text text text text text text text sidebarRight"
+       "sidebarLeft text text text text text text text text text text sidebarRight"
+       "sidebarLeft text text text text text text text text text text sidebarRight"
+       "sidebarLeft text2 text2 text2 text2 text2 text2 text2 text2 text2 text2 sidebarRight"
+       "sidebarLeft text2 text2 text2 text2 text2 text2 text2 text2 text2 text2 sidebarRight"
+       "sidebarLeft text2 text2 text2 text2 text2 text2 text2 text2 text2 text2 sidebarRight"
+       "sidebarLeft text2 text2 text2 text2 text2 text2 text2 text2 text2 text2 sidebarRight"
+       "sidebarLeft text2 text2 text2 text2 text2 text2 text2 text2 text2 text2 sidebarRight"
+       "sidebarLeft text2 text2 text2 text2 text2 text2 text2 text2 text2 text2 sidebarRight"
        "sidebarLeft footer footer footer footer footer footer footer footer footer footer sidebarRight";
 }
 h1{
@@ -25,6 +36,14 @@ a{
     font-family: 'Great Vibes', cursive;
     font-size: 20px;
     color: white;
+}
+button.randombuttom{ 
+    background: none; 
+    border: none; 
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: white;
+
 }
 .sidebarLeft{
     grid-area: sidebarLeft;
@@ -90,125 +109,125 @@ a{
     text-align: center;
     width: auto;
     grid-area: header;
-    
+    /*background-color: black;*/
+    overflow: hidden;
     color:white;
+    z-index: 2;
   
 }
 video{
     grid-area: header;
     width:100%;
-    background-color:#FFEDDF;
+    background-color:black;
     overflow: hidden;
+    overflow-y: hidden;
     z-index: -2;
-    
-}
-.intro{
-    grid-area: intro;
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    background-color:#FFEDDF;
-}
-.student{
-    grid-area: student;
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    background-color:#FFEDDF;
-}
-/*.img1{
-    grid-area: img1;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 50px;
-    padding-top:50px;
-    background-color:#FFEDDF;
-}
-.img2{
-    grid-area: img2;
-    width: auto;
-    padding-left: 50px;
-    background-color:#FFEDDF;
-}*/
-.athletes{
-    grid-area: athletes;
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    background-color:#FFEDDF;
-}
-.scientists{
-    grid-area: scientists;
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    background-color:#FFEDDF;
-}
-/*
-.img3{
-    grid-area: img3;
-    width: auto;
-    padding-left: 5px;
-    padding-right: 50px;
-    background-color:#FFEDDF;
-}
-.img4{
-    grid-area: img4;
-    width: auto;
-    padding-left: 50px;
-    background-color:#FFEDDF;
-}*/
-.webDesigner{
-    grid-area: webDesigner;
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    background-color:#FFEDDF;
-}
-.closing{
-    grid-area: closing;
-    width: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    background-color:#FFEDDF;
-}
-#story1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 14px;
+    pointer-events: none;
+  
 }
 
-#story2{
+
+.text{
+    grid-area: text;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    background-color:black;
     font-family: 'Dancing Script', cursive;
     font-size: 14px;
+    color: white;
 }
-#story3{
+
+.spiral{
+    display: none;
+}
+
+.keepGoing:hover ~ .spiral {
+    display: block;
+    position: absolute;
+    z-index: 2
+  }
+.studentStudy{
+    display:none;
+    width: 500px;
+}
+
+.student{
+    color: red;
+}
+
+.student:hover ~ .studentStudy {
+    display: block;
+    position: absolute;
+    z-index: 2
+  }
+
+  .run{
+    display: none;
+    width: 500px;
+  }
+
+.athlete{
+    color: yellow;
+}
+
+.athlete:hover ~ .run {
+    display: block;
+    position: absolute;
+    z-index: 2
+  }
+
+  .research{
+    display: none;
+    width: 500px;
+  }
+
+.scientist{
+    color: lightgreen;
+}
+
+  .scientist:hover ~ .research {
+    display: block;
+    position: absolute;
+    z-index: 2
+  }
+
+  .coding{
+    display: none;
+    width: 500px;
+  }
+
+  .webdesigner{
+    color: lightblue;
+  }
+  .webdesigner:hover ~ .coding {
+    display: block;
+    position: absolute;
+    z-index: 2
+  }
+
+
+
+
+.text2{
+    grid-area: text2;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    background-color:black;
     font-family: 'Dancing Script', cursive;
-    font-size: 14px;
+    font-size: 36px;
+    color: white;
 }
-#story4{
-    font-family: 'Dancing Script', cursive;
-    font-size: 14px;
-}
-#story5{
-    font-family: 'Dancing Script', cursive;
-    font-size: 14px;
-}
-#story6{
-    font-family: 'Dancing Script', cursive;
-    font-size: 14px;
-}
+
 footer{
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: center;
     width: auto;
     grid-area: footer;
-    background-color:#FFEDDF;
+    background-color:black;
 
   
 }
@@ -216,54 +235,71 @@ footer{
     font-family: 'Roboto Slab'; 
     font-size: 10px;
     font-style:italic;
+    color: white;
+}
+
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: white;
 }
 
 
-@media (max-midth: 1000px){
+@media (max-width: 1000px){
     .grid{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 0px;
         grid-auto-rows: minmax(75px, auto);
         grid-template-areas: 
-       "link1 link2 link3 link4"
-       "header header header header"
-       "main main main main"
-       "quote quote quote quote"
-       "small2 small2 small2 med2"
-       "footer footer footer footer";
+        "navLeft link1 navRight"
+        "navLeft link2 navRight"
+        "navLeft link3 navRight"
+        "navLeft link4 navRight"
+        "sidebarLeft header sidebarRight"
+        "sidebarLeft text sidebarRight"
+        "sidebarLeft text2 sidebarRight"
+        "sidebarLeft footer sidebarRight";
     }
 
-    .link1{
-        padding-top: 10px;
-        text-align: center;
-        width: auto;
-        grid-area: link1;
-        background-color: #FFEDDF;
+    #video{
+        width: 1000px;
     }
-    .link2{
-        padding-top: 10px;
-        text-align: center;
-        width: auto;
-        grid-area: link2;
-        background-color: #FFEDDF;
-    }
-    .link3{
-        padding-top: 10px;
-        text-align: center;
-        width: auto;
-        grid-area: link3;
-        background-color: #FFEDDF;
-    }
-    .link4{
-        padding-top: 10px;
-        text-align: center;
-        width: auto;
-        grid-area: link4;
-        background-color: #FFEDDF;
+    div#title h1{
+            font-family: 'Great Vibes', cursive;
+            font-size: 24px;
+            width: 1000px;
+            background-color: black;
     }
 
+}
 
+@media (max-width: 750px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        grid-auto-rows: minmax(75px, auto);
+        grid-template-areas: 
+        "sidebarLeft link1 sidebarRight"
+        "sidebarLeft link2 sidebarRight"
+        "sidebarLeft link3 sidebarRight"
+        "sidebarLeft link4 sidebarRight"
+        "sidebarLeft header sidebarRight"
+        "sidebarLeft text sidebarRight"
+        "sidebarLeft text2 sidebarRight"
+        "sidebarLeft footer sidebarRight";
+    }
+
+    #video{
+        width: 1000px;
+    }
+    div#title h1{
+            font-family: 'Great Vibes', cursive;
+            font-size: 24px;
+            width: 1000px;
+            background-color: black;
+    }
 
 }
 
