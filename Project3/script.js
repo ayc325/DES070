@@ -34,7 +34,7 @@ function randomlinks(){
   links[5]="https://msh223.github.io/WebRing/"
   links[6]="https://mlk224.github.io/WebRing/"
   links[7]="https://katiacarnevale.github.io/WebRing/"
-  links[8]="https://ctcooper11.github.io/WEBRING/Web-Ring/webring.html"
+  links[8]="https://ctcooper11.github.io/Web-Ring/Web-Ring.html"
 window.location=links[myrandom]
 
 }
