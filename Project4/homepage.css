@@ -1,0 +1,97 @@
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Moontime';
+*/
+@font-face {
+    font-family: 'Moontime';
+    src: url("fonts/Moontime.woff") format('woff');
+  }
+*{
+    margin: 0;
+}
+html{
+    max-width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px;
+    grid-template-rows: repeat(6, 1fr); 
+    justify-content: space-between;
+    grid-template-areas: 
+       "navLeft image title title title blank about blank2 catalog blank3 compare navRight"
+       "image1 image1 image1 image1 image1 image1 text1 text1 text1 text1 text1 text1"
+       "images images images images blank4 text2 text2 blank5 blank5 text3 text3 blank6"
+       
+}
+
+.logo{
+    grid-area: "image";
+    background-color: #C1C8FF;
+
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.title{
+    grid-area: "title";
+    font-family: 'Moontime';
+    font-size: 14pt;
+    background-color: #C1C8FF;
+    white-space: nowrap;
+    padding-top: 15%;
+}
+.blank{
+    background-color: #C1C8FF;
+}
+.blank2{
+    background-color: #C1C8FF;
+}
+.blank3{
+    background-color: #C1C8FF;
+}
+.about{
+    grid-area: "about";
+    background-color: #C1C8FF;
+    padding-top: 30%;
+    text-align: center;
+    font-size: 14px;
+}
+.catalog{
+    grid-area: "catalog";
+    background-color: #C1C8FF;
+    padding-top: 30%;
+    text-align: center;
+    font-size: 14px;
+}
+.compare{
+    grid-area: "compare";
+    background-color: #C1C8FF;
+    padding-top: 30%;
+    text-align: center;
+    font-size: 14px;
+}
+.navLeft{
+    background-color: #C1C8FF;
+    width: auto;
+}
+.navRight{
+    background-color: #C1C8FF;
+    width: auto;
+}
+.image1{
+    grid-area: "image1";
+    width: 100%;
+}
+.text1{
+    grid-area: "text1";
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+
