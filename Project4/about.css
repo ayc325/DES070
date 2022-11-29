@@ -1,0 +1,245 @@
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Moontime';
+*/
+@font-face {
+    font-family: 'Moontime';
+    src: url("fonts/Moontime.woff") format('woff');
+  }
+*{
+    margin: 0;
+}
+html{
+    max-width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(75px, auto);
+    justify-content: space-between;
+    grid-template-areas: 
+       "image image title title title blank about blank2 catalog blank3 compare navRight"
+       "img1 img1 img1 img1 img1 img1 text1 text1 text1 text1 text1 text1"
+       "txt2 txt2 txt2 txt2 txt2 txt2 img2 img2 img2 img2 img2 img2"
+       "blank4 blank4 blank4 blank4 text4 text4 text4 text4 blank5 blank5 blank5 blank5"  
+       "blank6 blank6 text6 text6 text6 blank8 blank8 text5 text5 text5 blank7 blank7"
+       "blank6 blank6 map map map blank8 blank8 text5 text5 text5 blank7 blank7"      
+
+       
+}
+
+.logo{
+    grid-area: image;
+    background-color: #C1C8FF;
+    align-content: center;
+    padding-top: 10%;
+    padding-left: 15%;
+
+}
+#navLinks:hover {
+    color:white;
+}
+.title{
+    grid-area: title;
+    font-family: 'Moontime';
+    font-size: 50pt;
+    background-color: #C1C8FF;
+    white-space: nowrap;
+    padding-top: 5%;
+    padding-left: -50%;
+}
+#top{
+    text-decoration: none;
+    color: black;
+}
+.blank{
+    grid-area: blank;
+    background-color: #C1C8FF;
+}
+.blank2{
+    grid-area: blank2;
+    background-color: #C1C8FF;
+}
+.blank3{
+    grid-area: blank3;
+    background-color: #C1C8FF;
+}
+#navLinks{
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.about{
+    grid-area: about;
+    background-color: #C1C8FF;
+    padding-top: 35%;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.catalog{
+    grid-area: catalog;
+    background-color: #C1C8FF;
+    padding-top: 35%;
+    text-align: center;
+    
+}
+.compare{
+    grid-area: compare;
+    background-color: #C1C8FF;
+    padding-top: 35%;
+    text-align: center;
+}
+.navLeft{
+    grid-area: navLeft;
+    background-color: #C1C8FF;
+    width: auto;
+}
+.navRight{
+    grid-area: navRight;
+    background-color: #C1C8FF;
+    width: auto;
+}
+.blank4{
+    grid-area: blank4;
+    background-color: white;
+    width: auto;
+}
+.blank5{
+    grid-area: blank5;
+    background-color: white;
+    width: auto;
+}
+
+.header{
+    grid-area: text1;
+    padding-top: 10%;
+}
+#subhead{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 36pt;
+    padding-bottom: 5%;
+}
+#about{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 18pt;
+    font-weight: 325;
+    text-align: center;
+
+}
+.image1{
+    text-align: center;
+    grid-area: img1;
+}
+.text4{
+    grid-area: txt2;
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26pt;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+.locations{
+    grid-area: img2;
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+    font-weight: 100;
+    background-color: transparent;
+    color: black;
+
+}
+.map{
+    grid-area: map;
+    text-align: center;
+}
+
+
+/*hovers*/
+.city1:hover ~ .la{
+    display: block;
+}
+#city1:hover{
+    font-weight:bold;
+}
+.city2:hover ~ .sf{
+    display:block;
+}
+#city2:hover {
+    font-weight:bold;
+}
+.city3:hover ~ .nyc{
+    display: block;
+}
+#city3:hover {
+    font-weight:bold;
+}
+.city4:hover ~ .chicago{
+    display: block;
+}
+#city4:hover {
+    font-weight:bold;
+}
+.city5:hover ~ .atlanta{
+    display: block;
+}
+#city5:hover {
+    font-weight:bold;
+}
+.city6:hover ~ .orlando{
+    display: block;
+}
+#city6:hover {
+    font-weight:bold;
+}
+.city7:hover ~ .houston{
+    display: block;
+}
+#city7:hover {
+    font-weight:bold;
+}
+.city8:hover ~ .dallas{
+    display: block;
+}
+#city8:hover {
+    font-weight:bold;
+}
+.la{
+    display: none;
+    grid-area: img2;
+    z-index: -2;
+    width: 100%;
+}
+.sf{
+    display: none;
+}
+.nyc{
+    display: none;
+}
+.chicago{
+    display: none;
+}
+.atlanta{
+    display: none;
+}
+.orlando{
+    display: none;
+}
+.houston{
+    display: none;
+}
+.dallas{
+    display: none;
+}
+
+

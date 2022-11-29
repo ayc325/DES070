@@ -1,0 +1,252 @@
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Moontime';
+*/
+@font-face {
+    font-family: 'Moontime';
+    src: url("fonts/Moontime.woff") format('woff');
+  }
+*{
+    margin: 0;
+}
+html{
+    max-width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(75px, auto);
+    justify-content: space-between;
+    grid-template-areas: 
+       "image image title title title blank about blank2 catalog blank3 compare navRight"
+       "header header header header header header header header header header header header"
+       "miniNav miniNav miniNav miniNav miniNav miniNav miniNav miniNav miniNav miniNav miniNav miniNav"
+       "p1 p1 p1 p1 p1 p1 i1 i1 i1 i1 i1 i1"
+       "i2 i2 i2 i2 i2 i2 p2 p2 p2 p2 p2 p2"
+       "p3 p3 p3 p3 p3 p3 i3 i3 i3 i3 i3 i3"
+       "i4 i4 i4 i4 i4 i4 p4 p4 p4 p4 p4 p4"
+       "p5 p5 p5 p5 p5 p5 i5 i5 i5 i5 i5 i5"
+       "i6 i6 i6 i6 i6 i6 p6 p6 p6 p6 p6 p6"
+       "p7 p7 p7 p7 p7 p7 i7 i7 i7 i7 i7 i7"
+       "i8 i8 i8 i8 i8 i8 p8 p8 p8 p8 p8 p8"
+       "p9 p9 p9 p9 p9 p9 i9 i9 i9 i9 i9 i9"
+
+       
+}
+
+.logo{
+    grid-area: image;
+    background-color: #C1C8FF;
+    align-content: center;
+    padding-top: 10%;
+    padding-left: 15%;
+
+}
+#navLinks:hover {
+    color:white;
+  }
+.title{
+    grid-area: title;
+    font-family: 'Moontime';
+    font-size: 50pt;
+    background-color: #C1C8FF;
+    white-space: nowrap;
+    padding-top: 5%;
+    padding-left: -50%;
+    
+}
+#top{
+    text-decoration: none;
+    color: black;
+}
+.blank{
+    grid-area: blank;
+    background-color: #C1C8FF;
+}
+.blank2{
+    grid-area: blank2;
+    background-color: #C1C8FF;
+}
+.blank3{
+    grid-area: blank3;
+    background-color: #C1C8FF;
+}
+#navLinks{
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.about{
+    grid-area: about;
+    background-color: #C1C8FF;
+    padding-top: 35%;
+    text-align: center;
+    
+}
+.catalog{
+    grid-area: catalog;
+    background-color: #C1C8FF;
+    padding-top: 35%;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.compare{
+    grid-area: compare;
+    background-color: #C1C8FF;
+    padding-top: 35%;
+    text-align: center;
+}
+.navLeft{
+    grid-area: navLeft;
+    background-color: #C1C8FF;
+    width: auto;
+}
+.navRight{
+    grid-area: navRight;
+    background-color: #C1C8FF;
+    width: auto;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+}
+.header{
+    grid-area: header;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 36pt;
+}
+.miniNav{
+    grid-area: miniNav;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 16pt;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+}
+#minNav1{
+    text-decoration: none;
+    color: black;
+}
+#minNav2{
+    text-decoration: none;
+    color: black;
+}
+#minNav3{
+    text-decoration: none;
+    color: black;
+}
+#minNav4{
+    text-decoration: none;
+    color: black;
+}
+#minNav5{
+    text-decoration: none;
+    color: black;
+}
+#minNav6{
+    text-decoration: none;
+    color: black;
+}
+#minNav7{
+    text-decoration: none;
+    color: black;
+}
+#minNav8{
+    text-decoration: none;
+    color: black;
+}
+#minNav9{
+    text-decoration: none;
+    color: black;
+}
+#minNav1:hover {
+    font-weight:bold;
+}
+#minNav2:hover {
+    font-weight:bold;
+}
+#minNav3:hover {
+    font-weight:bold;
+}
+#minNav4:hover {
+    font-weight:bold;
+}
+#minNav5:hover {
+    font-weight:bold;
+}
+#minNav6:hover {
+    font-weight:bold;
+}
+#minNav7:hover {
+    font-weight:bold;
+}
+#minNav8:hover {
+    font-weight:bold;
+}
+#minNav9:hover {
+    font-weight:bold;
+}
+.p1{
+    grid-area: p1;
+}
+.p2{
+    grid-area: p2;
+}
+.p3{
+    grid-area: p3;
+}
+.p4{
+    grid-area: p4;
+}
+.p5{
+    grid-area: p5;
+}
+.p6{
+    grid-area: p6;
+}
+.p7{
+    grid-area: p7;
+}
+.p8{
+    grid-area: p8;
+}
+.p9{
+    grid-area: p9;
+}
+.p1i1{
+    grid-area: i1;
+}
+.p2i2{
+    grid-area: i2;
+}
+.p3i3{
+    grid-area: i3;
+}
+.p4i4{
+    grid-area: i4;
+}
+.p5i5{
+    grid-area: i5;
+}
+.p6i6{
+    grid-area: i6;
+}
+.p7i7{
+    grid-area: i7;
+}
+.p8i8{
+    grid-area: i8;
+}
+.p9i9{
+    grid-area: i9;
+}
+
+
