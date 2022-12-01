@@ -346,7 +346,7 @@ h5{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 0;
-        grid-auto-rows: minmax(75px, auto);
+        
         grid-template-areas:
         "image about catalog compare"
         "header header header header"

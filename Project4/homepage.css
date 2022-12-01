@@ -20,8 +20,6 @@ html{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 0px;
-
-    justify-content: space-between;
     grid-template-areas: 
        "image image title title title blank about blank2 catalog blank3 compare navRight"
        "image1 image1 image1 image1 image1 image1 text1 text1 text1 text1 text1 text1"
@@ -276,7 +274,6 @@ a{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 0;
-        grid-auto-rows: minmax(75px, auto);
         grid-template-areas:
         "image about catalog compare"
         "image1 image1 image1 image1"
