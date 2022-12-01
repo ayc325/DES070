@@ -126,6 +126,7 @@ p{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     font-size: 16pt;
+    line-height: 1.25;
 }
 .header{
     grid-area: header;
@@ -212,7 +213,7 @@ h4{
 }
 h5{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 16pt;
+    font-size: 20pt;
     font-weight: 400;
 }
 .p1{
@@ -335,4 +336,128 @@ h5{
     padding-bottom: 5%;
 }
 
+@media (max-width: 600px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        grid-auto-rows: minmax(75px, auto);
+        grid-template-areas:
+        "image about catalog compare"
+        "header header header header"
+        "miniNav miniNav miniNav miniNav"
+        "p1 p1 i1 i1"
+        "i2 i2 p2 p2"
+        "p3 p3 i3 i3"
+        "i4 i4 p4 p4"
+        "p5 p5 i5 i5"
+        "i6 i6 p6 p6"
+        "p7 p7 i7 i7"
+        "i8 i8 p8 p8"
+        "p9 p9 i9 i9"
+    }
+    /*navbar*/
+    .image{
+        padding-top: 5%;
+    }
+    .about{
+        padding-top:20%;
+    }
+    .catalog{
+        padding-top:20%;
+    }
+    .compare{
+        padding-top:20%;
+    }
+    .blank{
+        display:none;
+    }
+    .title{
+        display:none;
+    }
+    .blank2{
+        display:none;
+    }
+    .blank3{
+        display:none;
+    }
+    .navRight{
+        display:none;
+    }
+    .navLeft{
+        display:none;
+    }
 
+
+    h5{
+        line-height: 1.5;
+    }
+    .header{
+        padding-left:20%;
+        padding-right: 20%;
+    }
+    .miniNav{
+        padding-left:20%;
+        padding-right: 20%;
+        line-height: 1.25;
+    }
+    /*padding left*/
+    .i1{
+        padding-left: 3%;
+    }
+    .p2{
+        padding-left: 2%;
+    }
+    .i3{
+        padding-left: 3%;
+    }
+    .p4{
+        padding-left: 2%;
+    }
+    .i5{
+        padding-left: 3%;
+    }
+    .p6{
+        padding-left: 2%;
+    }
+    .i7{
+        padding-left: 3%;
+    }
+    .p8{
+        padding-left: 2%;
+    }
+    .i9{
+        padding-left: 3%;
+    }
+    /*padding right*/
+    .p1{
+        padding-right: 2%;
+    }
+    .i2{
+        padding-right: 3%;
+    }
+    .p3{
+        padding-right: 2%;
+    }
+    .i4{
+        padding-right: 3%;
+    }
+    .p5{
+        padding-right: 2%;
+    }
+    .i6{
+        padding-right: 3%;
+    }
+    .p7{
+        padding-right: 2%;
+    }
+    .i8{
+        padding-right: 3%;
+    }
+    .p9{
+        padding-right: 2%;
+
+    }
+
+    
+}

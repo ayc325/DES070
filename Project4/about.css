@@ -18,16 +18,11 @@ html{
     grid-template-columns: repeat(12, 1fr);
     gap: 0px;
     grid-auto-rows: minmax(75px, auto);
-    justify-content: space-between;
     grid-template-areas: 
        "image image title title title blank about blank2 catalog blank3 compare navRight"
        "img1 img1 img1 img1 img1 img1 text1 text1 text1 text1 text1 text1"
-       "txt2 txt2 txt2 txt2 txt2 txt2 img2 img2 img2 img2 img2 img2"
-       "blank4 blank4 blank4 blank4 text4 text4 text4 text4 blank5 blank5 blank5 blank5"  
-       "blank6 blank6 text6 text6 text6 blank8 blank8 text5 text5 text5 blank7 blank7"
-       "blank6 blank6 map map map blank8 blank8 text5 text5 text5 blank7 blank7"      
-
-       
+       "txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2"
+       "gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery gallery"  
 }
 
 .logo{
@@ -143,103 +138,160 @@ html{
     text-align: center;
     padding-top: 15%;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 26pt;
+    font-size: 36pt;
     padding-left: 15%;
     padding-right: 15%;
 
 }
-.locations{
-    grid-area: img2;
-    text-align: center;
-    padding-top: 15%;
+.gallery{
+    grid-area: gallery;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+    overflow-x: hidden;
+}
+.text4 p{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18pt;
     font-weight: 100;
-    background-color: transparent;
+}
+
+
+/*trying hover again*/
+.gallery ul {
+    display: block;
+    height: 65vh;
+    width: 100%;
+    position: relative;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    list-style: none;
+    
+}
+li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+    font-weight: 100;
+    text-decoration: none;
+    line-height: 2;
+    list-style: none;
+}
+.gallery a{
     color: black;
-
-}
-.map{
-    grid-area: map;
+    display: block;
     text-align: center;
+    text-decoration: none;
+    width: 50%;
+}
+li:first-child a {
+    border-top: none;
+}
+.gallery a:hover {
+    font-weight:bold;
 }
 
-
-/*hovers*/
-.city1:hover ~ .la{
-    display: block;
-}
-#city1:hover{
-    font-weight:bold;
-}
-.city2:hover ~ .sf{
-    display:block;
-}
-#city2:hover {
-    font-weight:bold;
-}
-.city3:hover ~ .nyc{
-    display: block;
-}
-#city3:hover {
-    font-weight:bold;
-}
-.city4:hover ~ .chicago{
-    display: block;
-}
-#city4:hover {
-    font-weight:bold;
-}
-.city5:hover ~ .atlanta{
-    display: block;
-}
-#city5:hover {
-    font-weight:bold;
-}
-.city6:hover ~ .orlando{
-    display: block;
-}
-#city6:hover {
-    font-weight:bold;
-}
-.city7:hover ~ .houston{
-    display: block;
-}
-#city7:hover {
-    font-weight:bold;
-}
-.city8:hover ~ .dallas{
-    display: block;
-}
-#city8:hover {
-    font-weight:bold;
-}
-.la{
+.gallery img {
     display: none;
-    grid-area: img2;
-    z-index: -2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    overflow-x:hidden;
+}
+a:hover + img,
+.gallery img:hover {
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        grid-auto-rows: minmax(75px, auto);
+        grid-template-areas:
+        "image about catalog compare"
+        "img1 img1 img1 img1"
+        "text1 text1 text1 text1"
+        "txt2 txt2 txt2 txt2"
+        "gallery gallery gallery gallery"
+    }
+    /*navbar*/
+    .image{
+        padding-top: 5%;
+    }
+    .about{
+        padding-top:20%;
+    }
+    .catalog{
+        padding-top:20%;
+    }
+    .compare{
+        padding-top:20%;
+    }
+    .blank{
+        display:none;
+    }
+    .title{
+        display:none;
+    }
+    .blank2{
+        display:none;
+    }
+    .blank3{
+        display:none;
+    }
+    .navRight{
+        display:none;
+    }
+    .navLeft{
+        display:none;
+    }
+
+
+/*tap on mobile*/
+.gallery ul {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    list-style: none;
+}
+li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+    font-weight: 100;
+    text-decoration: none;
+    line-height: 2;
+    list-style: none;
+}
+.gallery a{
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
     width: 100%;
 }
-.sf{
-    display: none;
+li:first-child a {
+    border-top: none;
 }
-.nyc{
-    display: none;
-}
-.chicago{
-    display: none;
-}
-.atlanta{
-    display: none;
-}
-.orlando{
-    display: none;
-}
-.houston{
-    display: none;
-}
-.dallas{
-    display: none;
+.gallery a:hover {
+    font-weight:bold;
 }
 
+.gallery img {
+    display: none;
+    position: relative;
+    width: 80%;
+    overflow-x:hidden;
+    justify-content:center;
+}
+a:hover + img,
+.gallery img:hover {
+    display: block;
+    overflow-x: hidden;
 
+}
+}

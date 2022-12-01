@@ -153,6 +153,7 @@ html{
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 .pan5{
     grid-area: pan5;
@@ -163,6 +164,7 @@ html{
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
+    padding-bottom: 5%;
 }  
 .pan6{
     grid-area: pan6;
@@ -174,6 +176,7 @@ html{
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 a{
     text-decoration: none;
@@ -268,8 +271,65 @@ a{
     color: grey;
 }
 
+@media (max-width: 600px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        grid-auto-rows: minmax(75px, auto);
+        grid-template-areas:
+        "image about catalog compare"
+        "image1 image1 image1 image1"
+        "text1 text1 text1 text1"
+        "catalog1 catalog1 catalog1 catalog1"
+        "slideshow slideshow slideshow slideshow"
+        "pan1 pan1 pan1 pan1"
+        "pan4 pan4 pan4 pan4"
+        "pan2 pan2 pan2 pan2"
+        "pan5 pan5 pan5 pan5"
+        "pan3 pan3 pan3 pan3"
+        "pan6 pan6 pan6 pan6"
+    }
+    /*navbar*/
+    .image{
+        padding-top: 5%;
+    }
+    .about{
+        padding-top:20%;
+    }
+    .catalog{
+        padding-top:20%;
+    }
+    .compare{
+        padding-top:20%;
+    }
+    .blank{
+        display:none;
+    }
+    .title{
+        display:none;
+    }
+    .blank2{
+        display:none;
+    }
+    .blank3{
+        display:none;
+    }
 
+    .slideshow-container {
+        margin-top: 10% !important;
+    }
 
-  
+    .pan4{
+        padding-bottom: 10%;
+    }
+    .pan5{
+        padding-bottom: 10%;
+    }
+    .pan6{
+        padding-bottom: 10%;
+    }
+
+}
 
 

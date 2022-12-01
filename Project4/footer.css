@@ -112,7 +112,7 @@ h3{
     font-weight:bold;
 }
 #foot1{
-    line-height: 1.25;
+    line-height: 1.5;
 }
 .grid2 a{
     text-decoration: none;
@@ -120,5 +120,18 @@ h3{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 250;
     line-height: 1.5;
+}
+
+@media (max-width: 600px){
+    .grid2{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        grid-auto-rows: minmax(75px, auto);
+        grid-template-areas:
+        "links links place place"
+        "title title h2 h2"
+        "cr cr cr cr"
+    }
 }
 

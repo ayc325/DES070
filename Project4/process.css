@@ -291,3 +291,64 @@ html{
     text-align: center;
     line-height: 1.25;
 }
+
+@media (max-width: 600px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        grid-auto-rows: minmax(75px, auto);
+        grid-template-areas:
+        "image about catalog compare"
+        "header header header header"
+        "step1 step1 step1 step1"
+        "s1a s1a s1b s1b"
+        "s1c s1c s1d s1d"
+        "step2 step2 step2 step2"
+        "s2a s2a s2a s2a"
+        "s2b s2b s2b s2b"
+        "s2c s2c s2c s2c"
+        "step3 step3 step3 step3"
+        "s3a s3a s3b s3b"
+        "s3c s3c s3d s3d"
+    }
+    /*navbar*/
+    .image{
+        padding-top: 5%;
+    }
+    .about{
+        padding-top:20%;
+    }
+    .catalog{
+        padding-top:20%;
+    }
+    .compare{
+        padding-top:20%;
+    }
+    .blank{
+        display:none;
+    }
+    .title{
+        display:none;
+    }
+    .blank2{
+        display:none;
+    }
+    .blank3{
+        display:none;
+    }
+    .navRight{
+        display:none;
+    }
+    .navLeft{
+        display:none;
+    }
+    /*for process page*/
+    .header{
+        padding-left:25%;
+        padding-right: 25%;
+    }
+    .s3d{
+        padding-bottom: 50%;
+    }
+}
