@@ -17,8 +17,7 @@ html{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 0px;
-    grid-auto-rows: minmax(75px, auto);
-    justify-content: space-between;
+    
     grid-template-areas: 
        "image image title title title blank about blank2 catalog blank3 compare navRight"
        "header header header header header header header header header header header header"
@@ -248,7 +247,7 @@ html{
     padding-right: 15%;
     background-color: #221286;
     color: white;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     text-align: center;
     line-height: 1.25;
 }

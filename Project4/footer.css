@@ -17,7 +17,7 @@ html{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 0px;
-    grid-auto-rows: minmax(75px, auto);
+    
     justify-content: space-between;
     grid-template-areas: 
        "links links links place place place title title title h2 h2 h2"
@@ -28,7 +28,7 @@ html{
     grid-area: links;
     background-color: #221286;
     color: white;
-    padding: 10% 10% 10% 10%;
+    padding: 15% 10% 10% 10%;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     
@@ -37,7 +37,7 @@ html{
     grid-area: title;
     background-color: #221286;
     color: white;
-    padding: 10% 10% 10% 10%;
+    padding: 15% 10% 10% 10%;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
@@ -49,7 +49,7 @@ h2{
     grid-area: place;
     background-color: #221286;
     color: white;
-    padding: 10% 10% 10% 10%;
+    padding: 15% 10% 10% 10%;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
@@ -57,7 +57,7 @@ h2{
     grid-area:h2;
     background-color: #221286;
     color: white;
-    padding: 10% 10% 10% 10%;
+    padding: 15% 10% 10% 10%;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
@@ -69,6 +69,8 @@ h2{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     height: 5vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
 
 }
 #p1:hover{
@@ -111,14 +113,20 @@ h3{
 #l8:hover{
     font-weight:bold;
 }
-#foot1{
-    line-height: 1.5;
+.links a{
+    line-height: 3 !important;
 }
 .grid2 a{
     text-decoration: none;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 250;
+    line-height: 1.5;
+}
+.schedule p{
+    line-height: 1.5;
+}
+.inquiries p{
     line-height: 1.5;
 }
 

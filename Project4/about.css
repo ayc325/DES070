@@ -17,7 +17,7 @@ html{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 0px;
-    grid-auto-rows: minmax(75px, auto);
+   
     grid-template-areas: 
        "image image title title title blank about blank2 catalog blank3 compare navRight"
        "img1 img1 img1 img1 img1 img1 text1 text1 text1 text1 text1 text1"
@@ -136,7 +136,7 @@ html{
 .text4{
     grid-area: txt2;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 5%;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 36pt;
     padding-left: 15%;
@@ -148,6 +148,7 @@ html{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18pt;
     overflow-x: hidden;
+    padding-bottom: 5%;
 }
 .text4 p{
     font-family: 'Josefin Sans', sans-serif;
