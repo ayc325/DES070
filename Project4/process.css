@@ -22,9 +22,12 @@ html{
     grid-template-areas: 
        "image image title title title blank about blank2 catalog blank3 compare navRight"
        "header header header header header header header header header header header header"
-       "step1 step1 step1 step1 s1 s1 s1 s1 s1 s1 s1 s1"
-       "s2 s2 s2 s2 s2 s2 s2 s2 step2 step2 step2 step2"
-       "step3 step3 step3 step3 s3 s3 s3 s3 s3 s3 s3 s3"
+       "step1 step1 step1 step1 step1 step1 step1 step1 step1 step1 step1 step1"
+       "s1a s1a s1a s1b s1b s1b s1c s1c s1c s1d s1d s1d"
+       "step2 step2 step2 step2 step2 step2 step2 step2 step2 step2 step2 step2"
+       "s2a s2a s2a s2a s2b s2b s2b s2b s2c s2c s2c s2c"
+       "step3 step3 step3 step3 step3 step3 step3 step3 step3 step3 step3 step3"
+       "s3a s3a s3a s3b s3b s3b s3c s3c s3c s3d s3d s3d"
 
        
 }
@@ -113,17 +116,19 @@ html{
     font-size: 24pt;
 
 }
+/*Scheduling: Step 1*/
+
 .step1{
     grid-area: step1;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    padding-top: 20%;
+    padding-top: 5%;
     background-color: #E1E5F1;
     padding-bottom: 5%;
     font-size: 24pt;
 }
-.s1{
-    grid-area:s1;
+.s1a{
+    grid-area:s1a;
     font-family: 'Josefin Sans', sans-serif;
     padding-top: 5%;
     font-weight: 300;
@@ -131,39 +136,124 @@ html{
     padding-right: 15%;
     background-color: #E1E5F1;
     padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.5;
     
 }
+.s1b{
+    grid-area:s1b;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    font-weight: 300;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #E1E5F1;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+.s1c{
+    grid-area:s1c;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    font-weight: 300;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #E1E5F1;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.25;
+    
+}
+.s1d{
+    grid-area:s1d;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    font-weight: 300;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #E1E5F1;
+    padding-bottom: 10%;
+    text-align: center;
+    line-height: 1.25;
+    
+}
+
+/*Pickup: Step 2*/
 .step2{
     grid-area: step2;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    padding-top: 15%;
+    padding-top: 5%;
     background-color: #ADB2E1;
     padding-bottom: 5%;
     font-size: 24pt;
 }
-.s2{
-    grid-area: s2;
+.s2a{
+    grid-area: s2a;
     font-family: 'Josefin Sans', sans-serif;
     padding-top: 5%;
     font-weight: 300;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
     background-color: #ADB2E1;
     padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.5;
 }
+.s2b{
+    grid-area: s2b;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    font-weight: 300;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #ADB2E1;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.25;
+}
+.s2c{
+    grid-area: s2c;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    font-weight: 300;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #ADB2E1;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.25;
+}
+
+/*Drop off: Step 3*/
+
 .step3{
     grid-area: step3;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    padding-top: 20%;
+    padding-top: 5%;
     background-color: #221286;
     color: white;
     padding-bottom: 5%;
     font-size: 24pt;
 }
-.s3{
-    grid-area: s3;
+.s3a{
+    grid-area: s3a;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    font-weight: 300;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #221286;
+    color: white;
+    padding-bottom: 10%;
+    text-align: center;
+    line-height: 1.25;
+}
+.s3b{
+    grid-area: s3b;
     font-family: 'Josefin Sans', sans-serif;
     padding-top: 5%;
     font-weight: 300;
@@ -172,4 +262,32 @@ html{
     background-color: #221286;
     color: white;
     padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.25;
+}
+.s3c{
+    grid-area: s3c;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    font-weight: 300;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #221286;
+    color: white;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.25;
+}
+.s3d{
+    grid-area: s3d;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5%;
+    font-weight: 300;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #221286;
+    color: white;
+    padding-bottom: 5%;
+    text-align: center;
+    line-height: 1.25;
 }

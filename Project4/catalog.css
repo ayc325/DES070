@@ -64,14 +64,17 @@ html{
 .blank{
     grid-area: blank;
     background-color: #C1C8FF;
+
 }
 .blank2{
     grid-area: blank2;
     background-color: #C1C8FF;
+
 }
 .blank3{
     grid-area: blank3;
     background-color: #C1C8FF;
+
 }
 #navLinks{
     font-size: 24px;
@@ -79,12 +82,14 @@ html{
     text-align: center;
     color: black;
     text-decoration: none;
+
 }
 .about{
     grid-area: about;
     background-color: #C1C8FF;
     padding-top: 35%;
     text-align: center;
+
     
 }
 .catalog{
@@ -93,6 +98,7 @@ html{
     padding-top: 35%;
     text-align: center;
     font-weight: bold;
+
     
 }
 .compare{
@@ -100,17 +106,22 @@ html{
     background-color: #C1C8FF;
     padding-top: 35%;
     text-align: center;
+
 }
 .navLeft{
     grid-area: navLeft;
     background-color: #C1C8FF;
     width: auto;
+
 }
 .navRight{
     grid-area: navRight;
     background-color: #C1C8FF;
     width: auto;
+
 }
+
+
 p{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
@@ -130,6 +141,7 @@ p{
     font-size: 16pt;
     font-family: 'Josefin Sans', sans-serif;
     color: black;
+    padding-bottom: 5%;
 }
 #minNav1{
     text-decoration: none;
@@ -194,59 +206,133 @@ p{
 #minNav9:hover {
     font-weight:bold;
 }
+h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32pt;
+}
+h5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+}
 .p1{
     grid-area: p1;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(white, #F3EFFF);
 }
 .p2{
     grid-area: p2;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(#F3EFFF, #DCDCFA);
 }
 .p3{
     grid-area: p3;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(#DCDCFA, #CFD4FD);
 }
 .p4{
     grid-area: p4;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(#CFD4FD, #C1C8FF);
 }
 .p5{
     grid-area: p5;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(#C1C8FF, #9FA9F8);
 }
 .p6{
     grid-area: p6;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#9FA9F8, #818DED);
 }
 .p7{
     grid-area: p7;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#818DED, #4452C4);
 }
 .p8{
     grid-area: p8;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#4452C4, #2D3AA6);
 }
 .p9{
     grid-area: p9;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#2D3AA6, #221286);
+    padding-bottom: 5%;
 }
+
 .p1i1{
     grid-area: i1;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(white, #F3EFFF);
 }
 .p2i2{
     grid-area: i2;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(#F3EFFF, #DCDCFA);
 }
 .p3i3{
     grid-area: i3;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(#DCDCFA, #CFD4FD);
 }
 .p4i4{
     grid-area: i4;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(#CFD4FD, #C1C8FF);
 }
 .p5i5{
     grid-area: i5;
+    padding-top: 15%;
+    text-align: center;
+    background-image: linear-gradient(#C1C8FF, #9FA9F8);
 }
 .p6i6{
     grid-area: i6;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#9FA9F8, #818DED);
 }
 .p7i7{
     grid-area: i7;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#818DED, #4452C4);
 }
 .p8i8{
     grid-area: i8;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#4452C4, #2D3AA6);
 }
 .p9i9{
     grid-area: i9;
+    padding-top: 15%;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(#2D3AA6, #221286);
+    padding-bottom: 5%;
 }
 
 

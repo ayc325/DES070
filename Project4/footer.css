@@ -1,0 +1,124 @@
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Moontime';
+*/
+@font-face {
+    font-family: 'Moontime';
+    src: url("fonts/Moontime.woff") format('woff');
+  }
+*{
+    margin: 0;
+}
+html{
+    max-width: 100%;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(75px, auto);
+    justify-content: space-between;
+    grid-template-areas: 
+       "links links links place place place title title title h2 h2 h2"
+       "cr cr cr cr cr cr cr cr cr cr cr cr"
+  
+}
+.links{
+    grid-area: links;
+    background-color: #221286;
+    color: white;
+    padding: 10% 10% 10% 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    
+}
+.schedule{
+    grid-area: title;
+    background-color: #221286;
+    color: white;
+    padding: 10% 10% 10% 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20pt;
+}
+.location{
+    grid-area: place;
+    background-color: #221286;
+    color: white;
+    padding: 10% 10% 10% 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.inquiries{
+    grid-area:h2;
+    background-color: #221286;
+    color: white;
+    padding: 10% 10% 10% 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.copyright{
+    grid-area: cr;
+    background-color:#221286;
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 5vh;
+
+}
+#p1:hover{
+    font-weight:bold;
+}
+#p2:hover{
+    font-weight:bold;
+}
+#p3:hover{
+    font-weight:bold;
+}
+#p4:hover{
+    font-weight:bold;
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+}
+#l1:hover{
+    font-weight:bold;
+}
+#l2:hover{
+    font-weight:bold;
+}
+#l3:hover{
+    font-weight:bold;
+}
+#l4:hover{
+    font-weight:bold;
+}
+#l5:hover{
+    font-weight:bold;
+}
+#l6:hover{
+    font-weight:bold;
+}
+#l7:hover{
+    font-weight:bold;
+}
+#l8:hover{
+    font-weight:bold;
+}
+#foot1{
+    line-height: 1.25;
+}
+.grid2 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 250;
+    line-height: 1.5;
+}
+
